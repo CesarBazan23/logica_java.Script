@@ -23,8 +23,11 @@
         media = (nota1+nota2+nota3+nota4)/4
 
         //Saída
-        document.write('A média de ', nome, ' equivale a: ',media)
-        console.log('A média de ', nome, ' equivale a: ', media)
+        if (media > 7){
+            document.write(`Aprovado, pois a média foi: ${media.toFixed(2)}`)   
+        }
+        else 
+        document.write(`Reprovado, pois a média foi: ${media.toFixed(2)}`)
 
     </script>
 </body>
