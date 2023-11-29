@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Aritmética</title>
+</head>
+<body>
+    <script>
+        //Declaração de variáveis/constantes: var | let | const
+        var nota1, nota2, nota3, nota4, media;
+        //Entradas
+        //Toda a leitura do prompt é do tipo string(texto)
+        nome=prompt('Informe o nome do(a) aluno(a): ')
+        //Realizar a conversão de sting para Float
+        nota1=parseFloat(prompt('informe a 1º nota: '))
+        nota2=parseFloat(prompt('informe a 2º nota: '))
+        nota3=parseFloat(prompt('informe a 3º nota: '))
+        nota4=parseFloat(prompt('informe a 4º nota: '))
+
+        //Processamemto
+        //Realizar a conversão de sting para Float
+        media = (nota1+nota2+nota3+nota4)/4
+
+        //Saída
+        document.write('A média de ', nome, ' equivale a: ',media)
+        console.log('A média de ', nome, ' equivale a: ', media)
+
+    </script>
+</body>
+</html>

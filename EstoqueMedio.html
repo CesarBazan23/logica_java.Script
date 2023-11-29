@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Médio</title>
+</head>
+<body>
+    <script>
+        var codigo, descricao, qtdmin, qtdmax, qtdmed;
+
+        //Entradas
+        codigo=prompt('Informe o código do produto: ')
+        descricao=prompt('informe a descrição do produto: ')
+        qtdmin=parseFloat(prompt('Informe a quantidade minima: '))
+        qtdmax=parseFloat(prompt('Informe a quantidade máxima: '))
+
+        //Processamento
+        qtdmed = (qtdmin+qtdmax)/2
+
+        //Saida
+        document.write('A quantidade média é: ', qtdmed)
+    </script>
+</body>
+</html>

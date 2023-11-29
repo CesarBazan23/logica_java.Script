@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha de 1,99</title>
+</head>
+<body>
+    <script>
+        var codigo , nome, qtd, valorcompra;
+
+        //Entradas
+        nome=prompt('Nome do cliente: ')
+        codigo=prompt('Codigo do produto: ')
+        qtd=parseInt(prompt('Quantidade de produtos: '))
+
+        //Processamento
+        valorcompra = qtd*1.99
+
+        //Saida
+        document.write('<p>Cliente: ', nome,"</p>")
+        document.write('<p>Codigo do produto: ', codigo,"</p>")
+        document.write('<p>Valor da compra: ', valorcompra,"</p>")
+        
+    </script>
+</body>
+</html>
