@@ -18,7 +18,14 @@
 
         //Saida
         document.write('<p>O Fahrenheit é: ', fahrenheit, '<p>')
-        document.write('O Kelvin é: ', kelvin)
+        document.write('<p>O Kelvin é: ', kelvin, '<p>')
+
+        if (celsius<=10){
+            document.write(`HOJE ESTA FRIO!`)
+        }
+        if (celsius>=40){
+            document.write(`HOJE ESTA CALOR!`)
+        }
     </script>
 </body>
 </html>
