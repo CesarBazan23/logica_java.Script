@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var contador, numero, contpar = 0, contimpar = 0;
+
+        //Repetidor / Processamento
+        for (contador = 1; contador <= 10; contador++) {
+            //Entrada
+            numero = parseInt(prompt('Informe o número desejado: '));
+
+            document.write('<p>' + numero + '</p>')
+        
+        
+        if (numero % 2 == 0) {
+            contpar++;
+        } else {
+            contimpar++;
+        }
+    }
+        document.write('Quantidade de números pares: ', contpar)
+        document.write('Quantidade de números impares: ', contimpar)
+
+
+    </script>
+</body>
+</html>
