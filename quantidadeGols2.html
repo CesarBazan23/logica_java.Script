@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ let quantidadeGols;
+
+quantidadeGols = parseInt(prompt('Informe a quantidade de gols marecados pelo time em uma partida:'))
+
+for (let i = 1; i <= quantidadeGols; i++) {
+    document.write("Gol Marcado!<br>")
+}
+
+document.write('Total de gols marcados pelo time: ', quantidadeGols)
+
+if (quantidadeGols <= 0) {
+    document.write('<br>Time sem gols, precisa melhorar!')   
+}else{
+    if (quantidadeGols  <=3) {
+            document.write('<br>Desempenho regular.<br>')
+    } else{
+        document.write('<br>Excelente desempenho!<br>')
+    }
+}
+    
+    </script>
+</body>
+</html>
