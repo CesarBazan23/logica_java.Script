@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = 1
+        var fatorial = 1
+        numero = parseInt(prompt('Informe o número que deseja formatar: '))
+
+        do{
+            fatorial = fatorial * numero
+           numero-- 
+        }while(i <= numero)
+
+        document.write(`<p><b>O fatorial é:</b> ${fatorial}<p>`)
+
+    </script>
+</body>
+</html>
