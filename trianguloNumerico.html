@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      document.write ('<h1>Triângulo Númericos</h1>')
+      let num = parseInt(prompt('Digite um número de 1 até 9: '))
+
+      for (let i = 1; i <= num; i++){
+        let linha = ''
+        for(let j = 1; j <= i; j++){
+            linha += j + ''
+        }
+        document.write(`<p>${linha}</p>`)
+      }
+    </script>
+</body>
+</html>
