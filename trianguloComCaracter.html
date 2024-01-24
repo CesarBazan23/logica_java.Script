@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        document.write("<h1>Triângulo Caracteres</h1>")
         let num = parseInt(prompt('escreva o número de linhas desejadas:'))
         let caracter =(prompt('Informe a letra/caracter que deseja:'))
 
@@ -16,7 +17,7 @@
             for(let j=1;j<=i;j++){
                 linha+= caracter + ''
             }
-            document.write(`<p>${linha}</p>`)
+            document.write(`<p style="text-align:center;">${linha}</p>`)
         }
     </script>
 </body>
