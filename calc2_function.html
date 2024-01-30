@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(a, b, op){
+            if (op=='+'){
+                return a+b
+            }else if (op=='-'){
+                return a-b
+            }else if (op=='*'){
+                return a*b
+            }else if (op=='/'){
+                return b>0? a/b :"Não é possivel dividir por 0."
+            }
+            return "Operador inválido!"
+        }
+
+        let num1 = parseInt(prompt("Informe o 1° número: "))
+        let num2 = parseInt(prompt("Informe o 2° número: "))
+        let op
+        do{
+            op = prompt("Informe a operação (+ ,- , * ou /): ")
+        }while(!(op=='+'||op=='-'||op=='*'||op=='/'))
+        document.write(`O resultado do calculo de: ${num1} ${op} ${num2} é: ${calcular(num1, num2, op)}`)   
+
+    </script>
+</body>
+</html>
