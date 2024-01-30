@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./calculadora.js"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+   <h1>CALCULADORA</h1>
+   <label for="n1">Numero 1</label><br>
+   <input id="n1" type="number" placeholder="100..." autofocus><br>
+   <label for="n2">Numero 2</label><br>
+   <input id="n2" type="number" placeholder="20..."><br>
+   <h2 id="result"></h2>
+   <hr>
+   <button onclick="limparTela()">CLEAR</button>
+   <button onclick="btnSoma()">+</button>
+   <button onclick="btnSub()">-</button>
+   <button onclick="btnMult()">*</button>
+   <button onclick="btnDiv()">/</button>
+   <hr>
+   <script>
+        const n1 = document.getElementById('n1')
+        const n2 = document.getElementById('n2')
+        const result = document.getElementById('result')
+        let resultado =0
+        function limparTela(){
+            n1.value=''
+            n1.focus()
+            n2.value=''
+            result.innerText=''
+        }
+        function btnSoma(){
+            resultado = soma(parseInt(n1.value), parseInt(n2.value))
+            result.innerText= "Resultado: "+resultado
+        }
+        function btnSub(){
+            resultado = sub(parseInt(n1.value), parseInt(n2.value))
+            result.innerText= "Resultado: "+resultado
+        }
+        function btnMult(){
+            resultado = mult(parseInt(n1.value), parseInt(n2.value))
+            result.innerText= "Resultado: "+resultado
+        }
+        function btnDiv(){
+            resultado = div(parseInt(n1.value), parseInt(n2.value))
+            result.innerText= "Resultado: "+resultado
+        }
+
+    </script>
+</body>
+</html>
